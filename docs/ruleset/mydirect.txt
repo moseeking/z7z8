@@ -9,3 +9,6 @@ payload:
   - 'alt7-mtalk.google.com'
   - 'alt8-mtalk.google.com'
   - 'mtalk.google.com'
+  - 'mtalk4.google.com'
+  - 'mtalk-staging.google.com'
+  - 'mtalk-dev.google.com'
