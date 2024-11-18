@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              自用夜间模式
 // @namespace         
-// @version           0.1
+// @version           0.2
 // @description       油猴脚本，任意网站的夜间模式 来自https://greasyfork.org/zh-CN/scripts/436455-%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F%E5%8A%A9%E6%89%8B/code 修改
 // @author            mo
 // @match             *://*/*
@@ -468,6 +468,18 @@
             this.addListener();
             this.firstEnableDarkMode();
            
+
+            if(this.isInIncludeList()) {
+                const isDarkMode = window.getSystemTheme() === 'dark';
+                if (isDarkMode) {
+                    util.setValue('dark_mode', 'dark');
+                    this.enableDarkMode();
+                } else {
+                    util.setValue('dark_mode', 'light');
+                    this.disableDarkMode();
+                }
+                this.renewButton();
+            }
             // 监听系统主题变化
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
                 const isDarkMode = e.matches;
