@@ -463,23 +463,21 @@
         /*****************************************************************************/
         init() {
             this.initValue();
+            if(this.isInIncludeList()) {
+                let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (isDark) {
+                    util.setValue('dark_mode', 'dark');
+                } else {
+                    util.setValue('dark_mode', 'light');
+                }
+            }
             this.setThemeColor();
             this.registerMenuCommand();
             this.addListener();
             this.firstEnableDarkMode();
            
 
-            if(this.isInIncludeList()) {
-                const isDarkMode = window.getSystemTheme() === 'dark';
-                if (isDarkMode) {
-                    util.setValue('dark_mode', 'dark');
-                    this.enableDarkMode();
-                } else {
-                    util.setValue('dark_mode', 'light');
-                    this.disableDarkMode();
-                }
-                this.renewButton();
-            }
+           
             // 监听系统主题变化
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
                 const isDarkMode = e.matches;
