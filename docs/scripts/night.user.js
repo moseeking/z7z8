@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              自用夜间模式
 // @namespace         
-// @version           0.2
+// @version           0.3
 // @description       油猴脚本，任意网站的夜间模式 来自https://greasyfork.org/zh-CN/scripts/436455-%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F%E5%8A%A9%E6%89%8B/code 修改
 // @author            mo
 // @match             *://*/*
@@ -19,7 +19,7 @@
  
 ;(function () {
     'use strict';
- 
+    var darkMode = 'light';
     let util = {
         getValue(name) {
             return GM_getValue(name);
@@ -87,10 +87,7 @@
          * 配置默认值
          */
         initValue() {
-            let value = [{
-                name: 'dark_mode',
-                value: 'light'
-            }, {
+            let value = [ {
                 name: 'button_position',
                 value: 'left'
             }, {
@@ -225,7 +222,7 @@
         },
        
         isDarkMode() {
-            return util.getValue('dark_mode') === 'dark';
+            return darkMode === 'dark';
         },
  
         isInIncludeList() {
@@ -271,12 +268,14 @@
  
         enableDarkMode() {
             if (this.isFullScreen()) return;
+            darkMode = 'dark';
             !this.isFirefox() && this.createDarkFilter();
             this.createDarkStyle();
             util.addThemeColor('#131313')
         },
  
         disableDarkMode() {
+            darkMode = 'light';
             util.removeElementById('dark-mode-svg');
             util.removeElementById('dark-mode-style');
             util.addThemeColor(util.getValue('origin_theme_color'))
@@ -308,11 +307,9 @@
  
                 darkmodeButton.addEventListener("click", () => {
                     if (this.isDarkMode()) { //黑暗模式变为正常模式
-                        util.setValue('dark_mode', 'light');
                         this.disableDarkMode();
                         this.renewButton();
                     } else {
-                        util.setValue('dark_mode', 'dark');
                         this.enableDarkMode();
                         this.renewButton();
                     }
@@ -466,10 +463,8 @@
             if(this.isInIncludeList()) {
                 let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 if (isDark) {
-                    util.setValue('dark_mode', 'dark');
-                } else {
-                    util.setValue('dark_mode', 'light');
-                }
+                    darkMode = 'dark';
+                } 
             }
             this.setThemeColor();
             this.registerMenuCommand();
@@ -484,10 +479,8 @@
                 // 在这里处理主题变化
                 if (!this.isInIncludeList()) return;
                 if (isDarkMode) {
-                    util.setValue('dark_mode', 'dark');
                     this.enableDarkMode();
                 } else {
-                    util.setValue('dark_mode', 'light');
                     this.disableDarkMode();
                 }
                 this.renewButton();
