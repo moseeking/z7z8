@@ -1,3 +1,4 @@
 payload:
   - '+.googel.com'
   - '+.googelapis.cn'
+  - '2dfan.com'
