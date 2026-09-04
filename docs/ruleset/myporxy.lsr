@@ -1,6 +1,6 @@
 ; Docker Hub / Registry：镜像拉取、鉴权、网页及官方分发
-DOMAIN-SUFFIX, docker.io
-DOMAIN-SUFFIX, docker.com
+DOMAIN-SUFFIX, docker.io, Docker
+DOMAIN-SUFFIX, docker.com, Docker
 
 ; The Movie Database：API、图片 CDN 与网页
 DOMAIN-SUFFIX, tmdb.org
