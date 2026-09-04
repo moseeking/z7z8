@@ -1,0 +1,30 @@
+; Docker Hub / Registry：镜像拉取、鉴权、网页及官方分发
+DOMAIN-SUFFIX, docker.io
+DOMAIN-SUFFIX, docker.com
+
+; The Movie Database：API、图片 CDN 与网页
+DOMAIN-SUFFIX, tmdb.org
+DOMAIN-SUFFIX, themoviedb.org
+
+; Jellyfin 官方插件仓库
+DOMAIN-SUFFIX, jellyfin.org
+DOMAIN-SUFFIX, github.com
+DOMAIN-SUFFIX, githubusercontent.com
+
+; Trakt API 与网页
+DOMAIN-SUFFIX, trakt.tv
+
+; Bangumi：API、网页和常见图片域名
+DOMAIN-SUFFIX, bgm.tv
+DOMAIN-SUFFIX, bangumi.tv
+DOMAIN-SUFFIX, chii.in
+
+; MusicBrainz API、网站与封面归档
+DOMAIN-SUFFIX, musicbrainz.org
+DOMAIN-SUFFIX, coverartarchive.org
+
+; OMDb API
+DOMAIN-SUFFIX, omdbapi.com
+
+; Bing
+DOMAIN-SUFFIX, bing.com
