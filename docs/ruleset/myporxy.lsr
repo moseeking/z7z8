@@ -8,7 +8,7 @@ DOMAIN-SUFFIX, themoviedb.org
 
 ; Jellyfin 官方插件仓库
 DOMAIN-SUFFIX, jellyfin.org
-DOMAIN-SUFFIX, github.com
+;DOMAIN-SUFFIX, github.com
 ;DOMAIN-SUFFIX, githubusercontent.com
 
 ; Trakt API 与网页
