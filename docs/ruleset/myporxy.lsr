@@ -28,3 +28,24 @@ DOMAIN-SUFFIX, omdbapi.com
 
 ; Bing
 DOMAIN-SUFFIX, bing.com
+
+; Docker Hub：鉴权、镜像清单、镜像层下载
+DOMAIN-SUFFIX, docker.io
+DOMAIN-SUFFIX, docker.com
+DOMAIN-SUFFIX, dockerusercontent.com
+DOMAIN-SUFFIX, production.cloudflare.docker.com
+
+; GitHub：网页、Git HTTPS、API、源码及 Release 下载
+DOMAIN-SUFFIX, github.com
+DOMAIN-SUFFIX, githubusercontent.com
+DOMAIN-SUFFIX, githubassets.com
+
+; GitHub Container Registry：Immich 使用
+DOMAIN-SUFFIX, ghcr.io
+
+; 其他常见容器镜像仓库
+DOMAIN-SUFFIX, quay.io
+DOMAIN-SUFFIX, gcr.io
+DOMAIN-SUFFIX, pkg.dev
+DOMAIN-SUFFIX, k8s.io
+DOMAIN-SUFFIX, public.ecr.aws
