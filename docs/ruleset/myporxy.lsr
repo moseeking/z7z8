@@ -49,3 +49,34 @@ DOMAIN-SUFFIX, gcr.io
 DOMAIN-SUFFIX, pkg.dev
 DOMAIN-SUFFIX, k8s.io
 DOMAIN-SUFFIX, public.ecr.aws
+
+#BT
+DOMAIN-SUFFIX, gtkpw.xyz
+DOMAIN-SUFFIX, gtk.pw
+DOMAIN-SUFFIX, gtk.xyz
+
+DOMAIN-SUFFIX, nyaa.si
+DOMAIN-SUFFIX, nyaa.iss.one
+DOMAIN-SUFFIX, dmhy.org
+DOMAIN, dmhy.gate.flag.moe
+
+DOMAIN-SUFFIX, 1337x.to
+DOMAIN-SUFFIX, thepiratebay.org
+DOMAIN-SUFFIX, tpb.party
+DOMAIN-SUFFIX, yts.mx
+DOMAIN-SUFFIX, limetorrents.lol
+DOMAIN-SUFFIX, limetorrents.info
+DOMAIN-SUFFIX, torrentgalaxy.to
+DOMAIN-SUFFIX, kickasstorrents.to
+DOMAIN-SUFFIX, solidtorrents.to
+DOMAIN-SUFFIX, solidtorrents.eu
+DOMAIN-SUFFIX, bt4g.com
+DOMAIN-SUFFIX, bt4gprx.com
+DOMAIN-SUFFIX, btdig.com
+DOMAIN-SUFFIX, btsow.lol
+DOMAIN-SUFFIX, mikanani.me
+DOMAIN-SUFFIX, bangumi.moe
+DOMAIN-SUFFIX, acgnx.se
+DOMAIN-SUFFIX, acg.rip
+DOMAIN-SUFFIX, rutracker.org
+DOMAIN-SUFFIX, assrt.net
