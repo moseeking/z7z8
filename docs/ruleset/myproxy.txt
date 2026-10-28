@@ -1,4 +1,81 @@
 payload:
-  - '+.googel.com'
-  - '+.googelapis.cn'
-  - '2dfan.com'
+  # Docker Hub / Registry：镜像拉取、鉴权、网页及官方分发
+  - '+.docker.io'
+  - '+.docker.com'
+
+  # The Movie Database：API、图片 CDN 与网页
+  - '+.tmdb.org'
+  - '+.themoviedb.org'
+
+  # Jellyfin 官方插件仓库
+  - '+.jellyfin.org'
+
+  # Trakt API 与网页
+  - '+.trakt.tv'
+
+  # Bangumi：API、网页和常见图片域名
+  - '+.bgm.tv'
+  - '+.bangumi.tv'
+  - '+.chii.in'
+
+  # MusicBrainz API、网站与封面归档
+  - '+.musicbrainz.org'
+  - '+.coverartarchive.org'
+
+  # OMDb API
+  - '+.omdbapi.com'
+
+  # Bing
+  - '+.bing.com'
+
+  # Docker Hub：鉴权、镜像清单、镜像层下载
+  - '+.docker.io'
+  - '+.docker.com'
+  - '+.dockerusercontent.com'
+  - '+.production.cloudflare.docker.com'
+
+  # GitHub：网页、Git HTTPS、API、源码及 Release 下载
+  - '+.github.com'
+  - '+.githubusercontent.com'
+  - '+.githubassets.com'
+
+  # GitHub Container Registry：Immich 使用
+  - '+.ghcr.io'
+
+  # 其他常见容器镜像仓库
+  - '+.quay.io'
+  - '+.gcr.io'
+  - '+.pkg.dev'
+  - '+.k8s.io'
+  - '+.public.ecr.aws'
+
+  # BT
+  - '+.gtkpw.xyz'
+  - '+.gtk.pw'
+  - '+.gtk.xyz'
+
+  - '+.nyaa.si'
+  - '+.nyaa.iss.one'
+  - '+.dmhy.org'
+  - 'dmhy.gate.flag.moe'
+
+  - '+.1337x.to'
+  - '+.thepiratebay.org'
+  - '+.tpb.party'
+  - '+.yts.mx'
+  - '+.limetorrents.lol'
+  - '+.limetorrents.info'
+  - '+.torrentgalaxy.to'
+  - '+.kickasstorrents.to'
+  - '+.solidtorrents.to'
+  - '+.solidtorrents.eu'
+  - '+.bt4g.com'
+  - '+.bt4gprx.com'
+  - '+.btdig.com'
+  - '+.btsow.lol'
+  - '+.mikanani.me'
+  - '+.bangumi.moe'
+  - '+.acgnx.se'
+  - '+.acg.rip'
+  - '+.rutracker.org'
+  - '+.assrt.net'
